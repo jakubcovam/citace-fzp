@@ -212,7 +212,7 @@
   .check-item:hover{background:#f6f7fd}
   .check-item input{margin-top:5px;width:17px;height:17px;accent-color:var(--accent);flex:0 0 auto;cursor:pointer}
   .check-item label{cursor:pointer;font-size:.97rem}
-  .check-item input:checked+span{color:var(--danger);text-decoration:line-through;text-decoration-color:rgba(194,65,60,.5)}
+  .check-item input:checked+span{color:var(--good);text-decoration:line-through;text-decoration-color:rgba(15,157,108,.45)}
 
   /* FAQ */
   details.faq{
@@ -333,7 +333,7 @@
         </div>
         <div class="card dbt">
           <div class="dbt-top"><h3>Google Scholar</h3><span class="badge free">Volně dostupný</span></div>
-          <p class="what">Nejrychlejší start pro prvotní rešerši. Hledá napříč webem, ukáže „citováno v“, související články a export citací. Pozor — obsah není recenzovaný, proto si počiny ověřujte.</p>
+          <p class="what">Nejrychlejší start pro prvotní rešerši. Hledá napříč webem, ukáže „citováno v“, související články a export citací. Pozor — obsah není recenzovaný, proto si zdroje ověřujte.</p>
           <div class="link"><a href="https://scholar.google.com" target="_blank" rel="noopener">scholar.google.com ↗</a></div>
           <div class="tags"><span class="tag">všechny obory</span><span class="tag">zdarma</span></div>
         </div>
@@ -389,7 +389,7 @@
           <div class="dbt-top"><h3>BASE</h3><span class="badge free">Open access</span></div>
           <p class="what">Bibliotheksservice-Zentrum: vyhledávač v akademických otevřených zdrojích a repozitářích.</p>
           <div class="link"><a href="https://www.base-search.net" target="_blank" rel="noopener">base-search.net ↗</a></div>
-          <div class="tags"><span class="tag">repzitáře</span></div>
+          <div class="tags"><span class="tag">repozitáře</span></div>
         </div>
         <div class="card dbt">
           <div class="dbt-top"><h3>ResearchGate / Academia.edu</h3><span class="badge free">Sociální</span></div>
@@ -433,7 +433,7 @@
       <div class="grid grid-3">
         <div class="card dbt">
           <div class="dbt-top"><h3>UIS — studijní systém</h3><span class="badge hot">Povinné</span></div>
-          <p class="what">Univerzitní informační systém ČZU (známý též jako „KOS“): zápisy předmětů, rozvrhy, celostátní registr VŠKP (Theses.cz) a odevzdávání kvalifikačních prací.</p>
+          <p class="what">Univerzitní informační systém ČZU: zápisy předmětů, rozvrhy, studijní výsledky a odevzdávání kvalifikačních prací.</p>
           <div class="link"><a href="https://is.czu.cz" target="_blank" rel="noopener">is.czu.cz ↗</a></div>
         </div>
         <div class="card dbt">
@@ -519,14 +519,14 @@
           <h3 style="margin-top:0">✍️ Parafráze</h3>
           <p>Informaci ze zdroje vyjádříte <strong>vlastními slovy</strong>. Odkaz dáte, uvozovky ne.</p>
           <p class="cite-meta"><span class="tag">Harvardské:</span><span class="tag">(Smith, 2020)</span></p>
-          <p class="cite-meta"><span class="tag">Numerick:</span><span class="tag">[3]</span></p>
-          <p class="cite-notes">Bez obrácené kurzívy, bez uvozovek — jen odkaz na pramen.</p>
+          <p class="cite-meta"><span class="tag">Numerická:</span><span class="tag">[3]</span></p>
+          <p class="cite-notes">Bez uvozovek — jen odkaz na pramen.</p>
         </div>
         <div class="card">
           <h3 style="margin-top:0">💬 Přímá citace</h3>
           <p>Doslovně převezmete úryvek (<strong>uvozovky</strong> + přesné znění) a vždy doplníte <strong>stranu</strong>, odkud je.</p>
           <p class="cite-meta"><span class="tag">Harvardské:</span><span class="tag">(Smith, 2020, s. 45)</span></p>
-          <p class="cite-meta"><span class="tag">Numerick:</span><span class="tag">[3, s. 45]</span></p>
+          <p class="cite-meta"><span class="tag">Numerická:</span><span class="tag">[3, s. 45]</span></p>
           <p class="cite-notes">Kratší citace bez kurzívy, delší se často uvádějí jako samostatný odsazený blok.</p>
         </div>
         <div class="card">
@@ -607,7 +607,7 @@
   <section class="tab-panel" id="vzory" aria-label="Vzory citací">
     <section class="block">
       <div class="sec-head"><span class="no">3</span><h2>Vzory citací podle ČSN ISO 690</h2></div>
-      <p class="sec-desc">Následující příklady odpovídají běžné interpretaci <strong>ČSN ISO 690</strong>. U všech typů zdrojů platí jednotná logika: <em>autor – rok – název (kurzíva) – doplňující údaje – dostupnost</em>. Konkrétní detaily (kurzíva, umístění DOI) si vždy ověřte v metodice školy.</p>
+      <p class="sec-desc">Následující příklady odpovídají běžné interpretaci <strong>ČSN ISO 690</strong>. U všech typů zdrojů platí jednotná logika: <em>autor – rok – název (kurzíva) – doplňující údaje – dostupnost</em>. Konkrétní detaily (kurzíva, umístění DOI) si vždy ověřte v metodice školy. <strong>Uvedené záznamy jsou ilustrační</strong> — autoři, ISBN a DOI jsou smyšlené a slouží jen jako vzor formy.</p>
 
       <div class="grid grid-2">
         <div>
@@ -622,10 +622,10 @@
         <div>
           <h3>📰 Článek v odborném časopise</h3>
           <div class="cite-ex">
-            <span class="fld">SMITH, Anna R.; JHON, Peter.</span> City cycling and air quality: a longitudinal study. <span class="tit">Journal of Transport &amp; Health.</span> 2023, roč. 29, č. 2, s. 40–52. <span class="fld">DOI 10.1016/j.jth.2023.01.005.</span>
+            <span class="fld">SMITH, Anna R.; JOHN, Peter.</span> City cycling and air quality: a longitudinal study. <span class="tit">Journal of Transport &amp; Health.</span> 2023, roč. 29, č. 2, s. 40–52. <span class="fld">DOI 10.1016/j.jth.2023.01.005.</span>
           </div>
           <p class="cite-notes">U elektronické verze preferujeme <strong>DOI</strong> místo URL — doi je stabilní identifikátor článku.</p>
-          <p class="cite-meta"><span class="tag">v textu:</span><span class="tag">[2]</span><span class="tag">(Smith a Jhon, 2023)</span></p>
+          <p class="cite-meta"><span class="tag">v textu:</span><span class="tag">[2]</span><span class="tag">(Smith a John, 2023)</span></p>
         </div>
 
         <div>
@@ -649,7 +649,7 @@
         <div>
           <h3>🎓 Závěrečná práce</h3>
           <div class="cite-ex">
-            <span class="fld">KŘÍŽOVÁ, Adéla.</span> <span class="tit">Vliv udržitelné mobility na kvalitu života ve městě.</span> Brno: VUT, 2026. Bakalářská práce. [online]. [cit. 2026-09-15]. <span class="fld">Dostupné z: …</span>
+            <span class="fld">KŘÍŽOVÁ, Adéla.</span> <span class="tit">Vliv udržitelné mobility na kvalitu života ve městě</span> [online]. Praha, 2026 [cit. 2026-09-15]. Bakalářská práce. Česká zemědělská univerzita v Praze, Fakulta životního prostředí. <span class="fld">Dostupné z: …</span>
           </div>
           <p class="cite-notes">Uvádí se druh práce; pokud je v repozitáři, přidejte odkaz a datum citování.</p>
           <p class="cite-meta"><span class="tag">v textu:</span><span class="tag">[5]</span></p>
@@ -727,7 +727,7 @@
             <li>převzetí obrázku, dat, kódu či teorie bez uvedení autora,</li>
             <li>vygenerovaný text AI vydávaný za vlastní.</li>
           </ul>
-          <p>Školy posílají práce do <strong>kontroly originality</strong> (obvykle přes theses.cz / Turnitin). Výsledek vidí oponent i komise — shody v textu jsou hned vidět. Důsledky sahá od vrácení práce po disciplinární řízení.</p>
+          <p>Školy posílají práce do <strong>kontroly originality</strong> (obvykle přes theses.cz / Turnitin). Výsledek vidí oponent i komise — shody v textu jsou hned vidět. Důsledky sahají od vrácení práce po disciplinární řízení.</p>
           <div class="callout good" style="margin:12px 0 0;padding:10px 12px">
             <div><strong>Prevence:</strong> citovat průběžně, parafrázovat vlastními slovy, doslovné úryvky do uvozovek a vlastní myšlenky psát zřetelně jako vlastní závěry.</div>
           </div>
@@ -740,7 +740,7 @@
             <li>slibuje <strong>rychle recenzované přijetí</strong> za poplatek (APC) bez skutečného odborného posouzení,</li>
             <li>na webu chybí <strong>redakční rada, recenzní řízení, ISSN</strong> či etická pravidla.</li>
           </ul>
-          <p style="margin-bottom:0"><strong>Obrana:</strong> ověřte si časopis v databázích, podívejte se na jednu publikovanou studii, zeptejte se vedoucího či knihovny. Důvěryhodné časopisy si renomé nezískávaná e-maily.</p>
+          <p style="margin-bottom:0"><strong>Obrana:</strong> ověřte si časopis v databázích, podívejte se na jednu publikovanou studii, zeptejte se vedoucího či knihovny. Důvěryhodné časopisy si renomé nezískávají rozesíláním e-mailů.</p>
         </div>
       </div>
     </section>
@@ -774,46 +774,46 @@
 
       <details class="faq">
         <summary>Kolik zdrojů mám použít? <span class="plus">+</span></summary>
-        <div class="faq-body"><p>Záleží na oboru a požadavcích školy (často 20–40 u bakalářky). Důležitější než počet je <strong>kvalita a relevance</strong> — stovka zdrojů „do počtu“, které jste nečetli, práci neuškodí jen zdánlivě. Ani minimální počet nemáme, ale dobře prostudovaných 20 použitých a rozebraných zdrojů vypadá líp než 80 vyjmenovaných.</p></div>
+        <div class="faq-body"><p>Záleží na oboru a požadavcích školy (často 20–40 u bakalářky). Důležitější než počet je <strong>kvalita a relevance</strong> — zdroje „do počtu“, které jste nečetli, práci spíš uškodí. Lépe 20 dobře prostudovaných a v textu skutečně využitých zdrojů než 80 jen vyjmenovaných.</p></div>
       </details>
 
       <details class="faq">
-        <summary>Mohu citovat z Wikipedie?</summary>
+        <summary>Mohu citovat z Wikipedie? <span class="plus">+</span></summary>
         <div class="faq-body"><p>Odborné práce <strong>ne</strong>. Wikipedie je dobrá pro první orientaci v tématu a pro dohledání <strong>původních pramenů</strong> v sekci „Reference“/„Literatura“ — ty pak citujte. Jako zdroj do seznamu literatury se nepoužívá.</p></div>
       </details>
 
       <details class="faq">
-        <summary>Mám vlastní nápady — ty citovat nemusím, nebo ano?</summary>
+        <summary>Mám vlastní nápady — ty citovat nemusím, nebo ano? <span class="plus">+</span></summary>
         <div class="faq-body"><p>Vlastní analýzu, závěry a interpretaci citovat nepotřebujete (naopak — to je očekávaná přidaná hodnota práce). Ale jakmile se opíráte o nějaké <strong>zjištění, číslo nebo teorii</strong> z cizího zdroje, odkaz tam patří. Pokud si nejste jistí, je bezpečnější citovat.</p></div>
       </details>
 
       <details class="faq">
-        <summary>Co když zdroj nemá autora ani rok?</summary>
+        <summary>Co když zdroj nemá autora ani rok? <span class="plus">+</span></summary>
         <div class="faq-body"><p>Nahrazuje se <strong>organizace</strong> (např. ministerstvo, firma, úřad) nebo název stránky, a rok se dohledá nebo vynechá (u webu se píše alespoň datum citování). Takové zdroje používejte s rozumem — právě u nich je podezření na nižší odbornou hodnotu.</p></div>
       </details>
 
       <details class="faq">
-        <summary>Co je to DOI a kdy ho použiji?</summary>
+        <summary>Co je to DOI a kdy ho použiji? <span class="plus">+</span></summary>
         <div class="faq-body"><p><strong>DOI</strong> (Digital Object Identifier) je trvalý digitální identifikátor článku — něco jako trvalá adresa, která se nemění. U elektronických článků ho <strong>vždy uveďte</strong> (je stabilnější než URL). Napište ho ve formátu <code>DOI 10.xxx/xxx</code>. Pokud web nemá DOI, uveďte URL a datum citování.</p></div>
       </details>
 
       <details class="faq">
-        <summary>Můžu použít citaci, kterou jsem našel v jiném článku, bez toho, abych četl originál?</summary>
+        <summary>Můžu použít citaci, kterou jsem našel v jiném článku, bez toho, abych četl originál? <span class="plus">+</span></summary>
         <div class="faq-body"><p>Sekundární citace („citováno podle“) se <strong>nedoporučuje</strong>. Hledáte-li seriózní práci, najděte původní článek (podle DOI nebo v databázi) a citujte <u>ten</u>. Důvod: citát v druhé ruce může být vytržen z kontextu, špatně přeložený, prostě chybný.</p></div>
       </details>
 
       <details class="faq">
-        <summary>Word mi seznam literatury nesestavil správně. Co s tím?</summary>
-        <div class="faq-body"><p>Vestavěné nástroje Wordu jsou dobrý základ, ale vzory nemusí odpovídat metodice školy (interpunkce, kurzíva, pořadí). Standardní postup: <strong>vygenerujte seznam, pak ho zkontrolujte a upravte ručně</strong>, nebo použijte citační manažer (Zotero/Mendeley), kde styl ladíte přesněji. Hlavně nezapomeňte seznam <strong>přepnout do „čistého textu“</strong> (nebo odstranit pole), aby se při vkládání do finálního PDF nerozsypal.</p></div>
+        <summary>Word mi seznam literatury nesestavil správně. Co s tím? <span class="plus">+</span></summary>
+        <div class="faq-body"><p>Vestavěné nástroje Wordu jsou dobrý základ, ale vzory nemusí odpovídat metodice školy (interpunkce, kurzíva, pořadí). Standardní postup: <strong>vygenerujte seznam, pak ho zkontrolujte a upravte ručně</strong>, nebo použijte citační manažer (Zotero/Mendeley), kde styl ladíte přesněji. Před exportem do finálního PDF můžete citace <strong>převést na čistý text</strong> (odstranit pole), aby se formát nerozsypal — dělejte to ale <strong>až v kopii finální verze</strong>, jinak už Zotero ani Word citace neaktualizují.</p></div>
       </details>
 
       <details class="faq">
-        <summary>Jak citovat e-mail, rozhovor nebo vlastní měření?</summary>
-        <div class="faq-body"><p>Osobní komunikace (e-mail, rozhovor, dotazník) se obvykle uvádí v textu jako <em>osobní sdělení</em> s datem a nejzazší jde do poznámky — do seznamu literatury nepatří. Vlastní měření/dotazníky se <strong>necitují</strong>, popíšou se v metodice a označí jako „vlastní zpracování“. Přesné řešení si ověřte v metodice školy.</p></div>
+        <summary>Jak citovat e-mail, rozhovor nebo vlastní měření? <span class="plus">+</span></summary>
+        <div class="faq-body"><p>Osobní komunikace (e-mail, rozhovor, dotazník) se obvykle uvádí v textu jako <em>osobní sdělení</em> s datem, případně v poznámce pod čarou — do seznamu literatury nepatří. Vlastní měření/dotazníky se <strong>necitují</strong>, popíšou se v metodice a označí jako „vlastní zpracování“. Přesné řešení si ověřte v metodice školy.</p></div>
       </details>
 
       <details class="faq">
-        <summary>Kde najdu závaznou metodiku citování pro svou školu?</summary>
+        <summary>Kde najdu závaznou metodiku citování pro svou školu? <span class="plus">+</span></summary>
         <div class="faq-body"><p>V podkladech k předmětu, na webu fakulty (sekce „pro studenty“, „pokyny pro závěrečné práce“), v informačním systému školy nebo se zeptejte <strong>knihovny</strong> a <strong>vedoucího práce</strong>. Tento přehled je obecný rádce, ale <strong>nenahrazuje závazný předpis vaší školy</strong>.</p></div>
       </details>
     </section>
